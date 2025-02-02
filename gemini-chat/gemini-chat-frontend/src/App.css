@@ -1,0 +1,207 @@
+:root {
+  --background-color: #f5f5f5;
+  --text-color: #000;
+  --header-background: linear-gradient(90deg, #007bff, #00d4ff);
+  --header-text-color: #fff;
+  --chat-message-background: #fff;
+  --chat-message-user-background: #007bff;
+  --chat-message-bot-background: #e9ecef;
+  --chat-input-background: #fff;
+  --button-background: #007bff;
+  --button-hover-background: #0056b3;
+}
+
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #fff;
+  --header-background: linear-gradient(90deg, #333, #555);
+  --header-text-color: #fff;
+  --chat-message-background: #333;
+  --chat-message-user-background: #1e88e5;
+  --chat-message-bot-background: #444;
+  --chat-input-background: #333;
+  --button-background: #1e88e5;
+  --button-hover-background: #1565c0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background: var(--header-background);
+  color: var(--header-text-color);
+  text-align: center;
+  padding: 0.5rem; /* Reduced padding */
+  font-size: 1.5rem; /* Reduced font size */
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid var(--header-background);
+  position: relative; /* To position the dark mode button */
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.chat-input-container {
+  padding: 1rem;
+  background-color: var(--chat-input-background);
+  border-top: 1px solid #ddd;
+}
+
+.chat-message {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--chat-message-background);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  word-wrap: break-word;
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background-color: var(--chat-message-user-background);
+  color: var(--text-color);
+}
+
+.chat-message.bot {
+  align-self: flex-start;
+  background-color: var(--chat-message-bot-background);
+}
+
+.toggle-dark-mode {
+  position: absolute;
+  top: 50%;:root {
+  --background-color: #f5f5f5;
+  --text-color: #000;
+  --header-background: linear-gradient(90deg, #007bff, #00d4ff);
+  --header-text-color: #fff;
+  --chat-message-background: #fff;
+  --chat-message-user-background: #007bff;
+  --chat-message-bot-background: #e9ecef;
+  --chat-input-background: #fff;
+  --button-background: #007bff;
+  --button-hover-background: #0056b3;
+}
+
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #fff;
+  --header-background: linear-gradient(90deg, #333, #555);
+  --header-text-color: #fff;
+  --chat-message-background: #333;
+  --chat-message-user-background: #1e88e5;
+  --chat-message-bot-background: #444;
+  --chat-input-background: #333;
+  --button-background: #1e88e5;
+  --button-hover-background: #1565c0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background: var(--header-background);
+  color: var(--header-text-color);
+  text-align: center;
+  padding: 0.5rem; /* Reduced padding */
+  font-size: 1.5rem; /* Reduced font size */
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid var(--header-background);
+  position: relative; /* To position the dark mode button */
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.chat-input-container {
+  padding: 1rem;
+  background-color: var(--chat-input-background);
+  border-top: 1px solid #ddd;
+}
+
+.chat-message {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--chat-message-background);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  word-wrap: break-word;
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background-color: var(--chat-message-user-background);
+  color: var(--text-color);
+}
+
+.chat-message.bot {
+  align-self: flex-start;
+  background-color: var(--chat-message-bot-background);
+}
+
+.toggle-dark-mode {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  padding: 0.5rem 1.5rem; /* Increased padding */
+  background-color: var(--button-background);
+  color: var(--header-text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5rem; /* Increased font size */
+}
+
+.toggle-dark-mode:hover {
+  background-color: var(--button-hover-background);
+}
+  right: 1rem;
+  transform: translateY(-50%);
+  padding: 0.5rem 1rem;
+  background-color: var(--button-background);
+  color: var(--header-text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.toggle-dark-mode:hover {
+  background-color: var(--button-hover-background);
+}
